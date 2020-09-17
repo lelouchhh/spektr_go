@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="res/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Nunito&display=swap" rel="stylesheet">
+    <title>Спектр</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Crimson+Text&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header_container">
+            <div class="header_city">
+                <div class="front_city">
+                    <div class="img_city">
+                        <img src="res/img/tool.png" alt="">
+                    </div>
+                    <div class="city">
+                    <A id="myBtn">Целинное</A>
+                    </div>
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="text_in_modal">Выберете ваше место проживания</span>
+                        <span class="close"></span>
+                        <ul>
+                            <li>Куйбышев</li>
+                            <li>Цилинное</li>
+                            <li>Барнаул</li>
+                            <li>Бийск</li>
+                        </ul>
+                    </div>
+
+                </div>
+                    </a>
+                </div>
+            </div>
+            <div class="main_header_container">
+                <div class="header_name">
+                    <a href="/"><img src="res//img/logo.png" width="90px" alt=""></a>
+                        <div class="text_name">
+                            <a href="/"><span>СКТВ</span>Спектр</a>
+                        </div>
+
+                </div>
+                <div class="header_burger">
+
+                </div>
+                <div class="header_list">
+                    <ui class="header_menu">
+                        <li class="header_link"><a href="tariffs">Тарифы</a></li>
+                        <li class="header_link"><a href="contacts">Контакты</a></li>
+                        <li class="header_link"><a href="news">Новости</a></li>
+                    </ui>
+                </div>
+
+                <div class="header_button" onclick="navbar()">
+                    <a href="" class="login_button">
+                        <p class="">Войти</p>
+                    </a>
+                </div>
+                <div class="display_burger">
+                    <div class="burger_container">
+                        <div class="burger">
+
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </header>
+
+
+    <div class="carousel_container">
+        <div class="my_sliders fade">
+            <img src="res//img/first.jpg" alt="" width="2500px" height="500px">
+        </div>
+        <div class="my_sliders fade">
+            <img src="" alt="">
+        </div>
+        <div class="my_sliders fade">
+            <img src="" alt="">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+
+    <div class="body_container">
+        <div class="body_container_main">
+            <div class="new_user">
+                <span class="text_in_block">Станьте нашим клиентом прямо сейчас!</span>
+                <form action="/new_user" class="new_user_form" method="get">
+                    <input   type="text" name="adress" id="adress" required>
+                    <span class="floating_label_email">Адрес</span>
+                    <input placeholder="+7 (___) ___-____" id="phone_number" data-slots="_" name="phone_number" >
+                    <span class="floating_label_phone">Номер телефона</span>
+                    <input   type="text" name="name" id="name" required>
+                    <span class="floating_label_name">Как к вам обращатсья</span>
+                    <button>Отправть</button>
+                </form>
+                <div class="new_user_describe">
+                    <img src="res/img/add.png" alt="">
+                </div>
+
+            </div>
+            <div class="two_block_container">
+                <div class="pay_by_sber">
+                    <span class="text_in_block">Пополните свой баланс</span>
+                    <form action="">
+                        <input type="text" id="personal_id" required>
+                        <span class="floating_label_id">
+                            Личный счет
+                        </span>
+                        <input type="text" id="sber_money" required>
+                        <span class="floating_label_money">
+                            Сумма на пополнение
+                        </span>
+                        <button>Пополнить</button>
+                    </form>
+                </div>
+                <div class="personal_area">
+                    <span class="text_in_block">Личный кабинет</span>
+                    <form action="">
+                        <input type="text" id="main_input_login" required>
+                        <span class="floating_label_login">Логин</span>
+                        <input type="password" id="main_input_pass" required>
+                        <span class="floating_label_pass">Пароль</span>
+                        <button>Пополнить</button>
+                    </form>
+                </div>
+            </div>
+            <div class="news_in_main">
+                <img src="img/example.png" alt="" width="600px" HEIGHT="200px">
+                <div class="new_text">привет пока</div>
+                <div class="button_in_new">
+                    <a href="" >Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer_container">
+            <div class="phone_numbers">
+                Наш номер телефона
+                <span>
+                    +7 (981) 998 12 77 <br>
+                </span>
+
+            </div>
+            <div class="footer_right_block">
+                <div class="social_networks">
+                    <div class="footer_icons">
+                        <img src="res/img/whatsapp-logo.svg" width="35px" alt="">
+                        <img src="res/img/instagram-logo.svg" width="35px" alt="">
+                        <img src="res/img/vk-logo.svg" width="35px" alt="">
+                    </div>
+                </div>
+                <div class="footer_about_us">
+                    <span class="about_us">
+                        ООО «Сибирские сети»
+                        Новосибирск, Салтыкова-Щедрина, 118
+                        630132
+                        +7(383)305-51-94
+                        Электронная почта:
+                        info@211.ru
+                    </span>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+<script src="res/js/script.js"></script>
+</body>
+</html>
